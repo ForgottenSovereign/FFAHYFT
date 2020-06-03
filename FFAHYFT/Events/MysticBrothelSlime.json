@@ -1,0 +1,73 @@
+{
+    "name": "MysticBrothelSlime",
+    "CardType": "Event",
+    "CardLimit": "0",
+    "Description": "",
+    "requires": [ ""],
+    "Speakers": [
+                  {
+                    "name": "Blue Slime",
+                    "postName": "",
+                    "SpeakerType": "Monster"
+                  }
+                ],
+                "EventText": [
+                                {
+                                    "NameOfScene": "EventStart",
+                                    "theScene": [  "You Enter the room, a flare of power as you close the door behind you lets you know the Slime will arrive.",
+                                                    "DisplayCharacters",
+                                                    "1",
+                                                    "EndLoop",
+                                                    "StopBGM",
+                                                    "She arrives and looks eager to get going, and she's not going to take anything lying down.",
+                                                    "You have a feeling the power in the room would render you helpless on any fight you might try and start.",
+                                                    "Speaks",
+                                                    "So... you brought me here, how's it going to go?",
+                                                    "Menu",
+                                                      "Titfucking",
+                                                      "Sex",
+                                                      "Go home and rethink your life choices.",
+                                                    "EndLoop"
+                                                ]
+                                    },
+                                    {
+                                    "NameOfScene": "Titfucking",
+                                    "theScene": [   "SetSpirit",
+                                                    "1",
+                                                    "ChangeArousalByPercent",
+                                                    "100",
+                                                    "ApplyStatusEffect",
+                                                    "Stun Flare",
+                                                    "CombatEncounter",
+                                                    "Blue Slime",
+                                                    "ApplyStance",
+                                                    "Titfuck",
+                                                    "Restrainer",
+                                                    "StartCombat",
+                                                    "GameOver"
+                                                ]
+                                    },
+                                    {
+                                    "NameOfScene": "Sex",
+                                      "theScene": [ "SetSpirit",
+                                                    "1",
+                                                    "ChangeArousalByPercent",
+                                                    "100",
+                                                    "ApplyStatusEffect",
+                                                    "Stun Flare",
+                                                    "CombatEncounter",
+                                                    "Blue Slime",
+                                                    "ApplyStance",
+                                                    "Sex",
+                                                    "Restrainer",
+                                                    "StartCombat",
+                                                    "GameOver"
+                                                ]
+                                    },
+                                    {
+                                    "NameOfScene": "Go home and rethink your life choices.",
+                                    "theScene": [  "You decide that a horny Slime just isn't doing it for you now that she's here."
+                                                ]
+                                    }
+                          ]
+            }

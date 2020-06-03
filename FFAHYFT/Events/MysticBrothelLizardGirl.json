@@ -1,0 +1,56 @@
+{
+    "name": "MysticBrothelLizardGirl",
+    "CardType": "Event",
+    "CardLimit": "0",
+    "Description": "",
+    "requires": [ ""],
+    "Speakers": [
+                  {
+                    "name": "Lizard Girl",
+                    "postName": "",
+                    "SpeakerType": "Monster"
+                  }
+                ],
+                "EventText": [
+                                {
+                                    "NameOfScene": "EventStart",
+                                    "theScene": [  "You Enter the room, a flare of power as you close the door behind you lets you know the Lizard Girl will arrive.",
+                                                    "DisplayCharacters",
+                                                    "1",
+                                                    "EndLoop",
+                                                    "StopBGM",
+                                                    "She arrives and looks eager to get going, and she's not going to take anything lying down.",
+                                                    "You have a feeling the power in the room would render you helpless on any fight you might try and start.",
+                                                    "Menu",
+                                                      "'Fight' her.",
+                                                      "Go home and rethink your life choices.",
+                                                    "EndLoop"
+                                                ]
+                                    },
+                                    {
+                                    "NameOfScene": "'Fight' her",
+                                    "theScene": [  "ChangeImagerFor",
+                                                    "1",
+                                                    "Smug",
+                                                    "Speaks",
+                                                    "You do know I'm going to fuck you senseless right?",
+                                                    "SetSpirit",
+                                                    "1",
+                                                    "ChangeArousalByPercent",
+                                                    "100",
+                                                    "ApplyStatusEffect",
+                                                    "Stun Flare",
+                                                    "CombatEncounter",
+                                                    "Lizard Girl",
+                                                    "Restrainer",
+                                                    "StartCombat",
+                                                    "GameOver"
+                                                ]
+                                    },
+                                    {
+                                    "NameOfScene": "Go home and rethink your life choices.",
+                                    "theScene": [  "You decide that a horny Lizard Girl just isn't doing it for you now that she's here."
+                                                ]
+                                    }
+                          ]
+            }

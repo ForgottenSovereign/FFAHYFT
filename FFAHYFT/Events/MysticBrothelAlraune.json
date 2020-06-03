@@ -1,0 +1,70 @@
+{
+    "name": "MysticBrothelAlraune",
+    "CardType": "Event",
+    "CardLimit": "0",
+    "Description": "",
+    "requires": [ ""],
+    "Speakers": [
+                  {
+                    "name": "Alraune",
+                    "postName": "",
+                    "SpeakerType": "Monster"
+                  }
+                ],
+    "EventText": [
+                    {
+                        "NameOfScene": "EventStart",
+                        "theScene": [  "You Enter the room, a flare of power as you close the door behind you lets you know the Alraune will arrive.",
+                                        "DisplayCharacters",
+                                        "1",
+                                        "EndLoop",
+                                        "StopBGM",
+                                        "ChangeImageLayer", "Expression","1", "Pleasured", "ChangeImageLayer", "Base", "1", "Blush",
+                                         "The Alraune appears nearby with a pleasured sigh, laying in her flower before getting up and leaning against the petals edges.",
+                                         "ChangeImageLayer", "Expression","1", "Caring",
+                                         "Speaks",
+                                         "A big strong adventurer like you must want some relief, right?♥",
+                                         "ChangeBGM", "music/Casino/BGM sweet smell.mp3",
+                                         "ChangeImageLayer", "Expression","1", "Seductive",
+                                        "She turns around with a seductive backwards glance at you, holding onto the rim of her flower while keeping her wide voluptuous hips raised in the air at you gently swaying them back and forth, and the sweet fragrance of her pheromones hangs delightfully in the air, accenting the dangers of her tempting offer...",
+                                        "Are you going to take the lead... or are you tired?",
+                                        "Menu",
+                                          "Take the lead and fuck her!",
+                                          "Too 'tired' to lead.",
+                                          "Go home and rethink your life choices.",
+                                        "EndLoop"
+                                    ]
+                        },
+                        {
+                        "NameOfScene": "Take the lead and fuck her!",
+                        "theScene": [  "CallEventAndSceneThenReturn",
+                				                "AlrauneCombatEvent",
+                                        "Take her offer and fuck her!",
+                                        "EndLoop"
+                                    ]
+                        },
+                        {
+                        "NameOfScene": "Too 'tired' to lead.",
+                        "theScene": [  "Without a second thought you  accept her seductive offer, your mind to focused on thoughts of sex to even think of resisting the temptation of her tight pussy, and you sigh blissfully as it lovingly squeezes your throbbing length.",
+                                        "SetSpirit",
+                                        "1",
+                                        "ChangeArousalByPercent",
+                                        "100",
+                                        "ApplyStatusEffect",
+                                        "Stun Flare",
+                                        "CombatEncounter",
+                                        "Alraune",
+                                        "ApplyStance",
+                                        "Sex",
+                                        "Restrainer",
+                                        "StartCombat",
+                                        "GameOver"
+                                    ]
+                        },
+                        {
+                        "NameOfScene": "Go home and rethink your life choices.",
+                        "theScene": [  "You decide that a horny Alraune just isn't doing it for you now that she's here."
+                                    ]
+                        }
+              ]
+}

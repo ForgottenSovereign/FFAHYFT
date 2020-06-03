@@ -1,0 +1,204 @@
+{
+	"name": "Mystic Gallery Brothel",
+	"CardType": "Shopping",
+	"CardLimit": "0",
+	"Description": "Standalone Brothel",
+	"requires": [""],
+	"Speakers": [{
+		"name": "Proprietor",
+		"postName": "",
+		"SpeakerType": "?"
+	}],
+	"EventText": [{
+			"NameOfScene": "EventStart",
+			"theScene": ["Looking at the understated Building, you enter",
+				"Speaks",
+				"Welcome to Fantastic Fucks and Here You'll Find Them! What can I do for you?",
+				"JumpToScene",
+				"Choices"
+			]
+		},
+		{
+			"NameOfScene": "Choices",
+			"theScene": [
+				"Menu",
+				"RequiresMinimumProgressFromEvent", "Bag Mimic", "1", "Mimic Bag", "HideOptionOnRequirementFail",
+        "RequiresItem", "Vandal Note", "Mystic Forest", "HideOptionOnRequirementFail",
+				"Leave",
+				"EndLoop"
+			]
+		},
+		{
+			"NameOfScene": "Nevermind",
+			"theScene": [
+				"JumpToScene",
+				"Choices"
+			]
+		},
+		{
+			"NameOfScene": "Bug Event Break Test",
+			"theScene": [
+				"CallEventAndSceneThenReturn",
+				"MysticBrothelBugTest",
+				"Bug Event Break Test",
+				"EndLoop",
+				"If you are reading this something broke"
+			]
+		},
+		{
+			"NameOfScene": "Of Course!",
+			"theScene": [
+				"HasErosLessThan", "100", "Kicked Out",
+				"ChangeEros", "-100",
+				"IfChoice", "1", "Alraune", "Paid Alraune",
+				"IfChoice", "1", "Slime", "Paid Slime",
+				"IfChoice", "1", "Elf", "Paid Elf",
+				"IfChoice", "1", "Matango", "Paid Matango",
+				"IfChoice", "1", "Mimic Bag", "Mimic Bag"
+			]
+		},
+		{
+			"NameOfScene": "Kicked Out",
+			"theScene": [
+				"Counting your Eros you find out you don't have enough",
+				"Speaks",
+				"You don't even have that much, Get out and don't come back until you can pay.",
+				"You return to town awkward about getting kicked out"
+			]
+		},
+		{
+			"NameOfScene": "Mystic Forest",
+			"theScene": [
+				"Speaks",
+				"What kind of monster from there?",
+				"Menu",
+				"Alraune",
+				"Slime",
+				"Elf",
+				"Nevermind",
+				"EndLoop"
+			]
+		},
+		{
+			"NameOfScene": "Alraune",
+			"theScene": [
+				"SetChoice", "1", "Alraune",
+				"Speaks",
+				"100 Eros and an alraune will show up in that room over there",
+				"He points to a room in the southern corner",
+				"Speaks",
+				"So, going for it?",
+				"Menu",
+				"Of Course!",
+				"Nevermind",
+				"EndLoop"
+			]
+		},
+		{
+			"NameOfScene": "Paid Alraune",
+			"theScene": [
+				"JumpToEventThenScene",
+				"MysticBrothelAlraune",
+				"EventStart",
+        "EndLoop",
+        "JumpToScene",
+				"EventReturn"
+			]
+		},
+		{
+			"NameOfScene": "Slime",
+			"theScene": [
+				"SetChoice", "1", "Slime",
+				"Speaks",
+				"100 Eros and an alraune will show up in that room over there",
+				"He points to a room in the southern corner",
+				"Speaks",
+				"So, going for it?",
+				"Menu",
+				"Of Course!",
+				"Nevermind",
+				"EndLoop"
+			]
+		},
+		{
+			"NameOfScene": "Paid Slime",
+			"theScene": [
+				"JumpToEventThenScene",
+				"MysticBrothelSlime",
+				"EventStart",
+        "EndLoop",
+        "JumpToScene",
+				"EventReturn"
+			]
+		},
+		{
+			"NameOfScene": "Elf",
+			"theScene": [
+				"SetChoice", "1", "Elf",
+				"Speaks",
+				"100 Eros and an Elf will show up in that room over there",
+				"He points to a room in the southern corner",
+				"Speaks",
+				"So, going for it?",
+				"Menu",
+				"Of Course!",
+				"Nevermind",
+				"EndLoop"
+			]
+		},
+		{
+			"NameOfScene": "Paid Elf",
+			"theScene": [
+				"JumpToEventThenScene",
+				"MysticBrothelElf",
+				"EventStart",
+        "EndLoop",
+        "JumpToScene",
+				"EventReturn"
+			]
+		},
+		{
+			"NameOfScene": "Mimic Bag",
+			"theScene": [
+				"Speaks",
+				"Stella left a bag in that room over there",
+				"He points to a room in the northern corner",
+				"Have fun now!",
+				"JumpToEventThenScene",
+				"Bag Mimic",
+				"Take them.",
+				"EndLoop",
+				"JumpToScene",
+				"EventReturn"
+			]
+		},
+		{
+			"NameOfScene": "EventReturn",
+			"theScene": [
+        "DisplayCharacters",
+        "1",
+        "EndLoop",
+        "IfPlayerSpiritGone",
+        "Game Over",
+        "Speaks",
+				"Still going strong I see? What now?",
+				"JumpToScene",
+				"Choices"
+			]
+		},
+    {
+			"NameOfScene": "Game Over",
+			"theScene": [
+				"GameOver"
+			]
+		},
+    {
+			"NameOfScene": "Leave",
+			"theScene": [
+				"Speaks",
+				"Until next time then!",
+				"You Return to town"
+			]
+		}
+	]
+}

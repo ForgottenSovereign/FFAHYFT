@@ -1,0 +1,26 @@
+{
+	"name": "Fantastic Fucks and Here You'll Find Them",
+	"description": "Adds a new building to the game, a brothel beach. Here to jump to generic monster scenes.",
+	"author": "Forgotten",
+	"modLoaderVer": 1.2,
+	"prerequisites": [],
+	"baseDir": "FFAHYFT",
+
+	"AdventureList": [],
+	"EventList": [
+    "Events/MysticBrothel.json",
+    "Events/MysticBrothelAlraune.json",
+    "Events/MysticBrothelSlime.json",
+    "Events/MysticBrothelElf.json",
+    "Events/MysticBrothelLizardGirl.json"
+],
+	"ItemList": [],
+	"LocationList": [],
+	"MonsterList": [],
+	"NPCList": [],
+	"PerkList": [],
+	"SkillList": [],
+	"FetishLists": [	],
+	"AddictionLists": [],
+	"BrothelList":[	]
+}
