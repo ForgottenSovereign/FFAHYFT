@@ -1,6 +1,6 @@
 {
 	"name": "Fantastic Fucks and Here You'll Find Them",
-	"description": "Adds a new building to the game, a brothel beach. Here to jump to generic monster scenes.",
+	"description": "Adds a new building to the game, a brothel. Here to jump to generic monster scenes.",
 	"author": "Forgotten",
 	"modLoaderVer": 1.2,
 	"prerequisites": [],
@@ -10,16 +10,22 @@
 	"EventList": [
     "Events/MysticBrothel.json",
     "Events/MysticBrothelAlraune.json",
-    "Events/MysticBrothelSlime.json",
     "Events/MysticBrothelElf.json",
-    "Events/MysticBrothelLizardGirl.json"
+		"Events/MysticBrothelSlime.json",
+		"Events/MysticBrothelImp.json",
+		"Events/MysticBrothelMatango.json",
+		"Events/MysticBrothelHarpy.json",
+    "Events/MysticBrothelLizardGirl.json",
+		"Events/MysticBrothelMinotaur.json"
 ],
 	"ItemList": [],
 	"LocationList": [],
 	"MonsterList": [],
 	"NPCList": [],
 	"PerkList": [],
-	"SkillList": [],
+	"SkillList": [
+		"Skills/BrothelSurrender.json"
+	],
 	"FetishLists": [	],
 	"AddictionLists": [],
 	"BrothelList":[	]

@@ -1,0 +1,87 @@
+{
+	"name": "MysticBrothelMinotaur",
+	"CardType": "Event",
+	"CardLimit": "0",
+	"Description": "",
+	"requires": [""],
+	"Speakers": [{
+		"name": "Minotaur",
+		"postName": "",
+		"SpeakerType": "Monster"
+	}],
+	"EventText": [{
+			"NameOfScene": "EventStart",
+			"theScene": ["You Enter the room, a flare of power as you close the door behind you lets you know the Minotaur will arrive.",
+				"DisplayCharacters",
+				"1",
+				"EndLoop",
+				"StopBGM",
+				"She arrives and looks eager to get going, and she's not going to take anything lying down.",
+				"You have a feeling the power in the room would render you helpless on any fight you might try and start.",
+				"Speaks",
+				"So... you brought me here, how's it going to go?",
+				"Menu",
+				"Sex",
+				"Anal",
+				"Breast Smother",
+				"Go home and rethink your life choices.",
+				"EndLoop"
+			]
+		},
+		{
+			"NameOfScene": "Sex",
+			"theScene": ["SetSpirit",
+				"1",
+				"ChangeArousalByPercent",
+				"100",
+				"ApplyStatusEffect",
+				"BrothelSurrender",
+				"CombatEncounter",
+				"Minotaur",
+				"ApplyStance",
+				"Sex",
+				"Restrainer",
+				"StartCombat",
+				"GameOver"
+			]
+		},
+		{
+			"NameOfScene": "Anal",
+			"theScene": ["SetSpirit",
+				"1",
+				"ChangeArousalByPercent",
+				"100",
+				"ApplyStatusEffect",
+				"BrothelSurrender",
+				"CombatEncounter",
+				"Minotaur",
+				"ApplyStance",
+				"Anal",
+				"Restrainer",
+				"StartCombat",
+				"GameOver"
+			]
+		},
+		{
+			"NameOfScene": "Breast Smother",
+			"theScene": ["SetSpirit",
+				"1",
+				"ChangeArousalByPercent",
+				"100",
+				"ApplyStatusEffect",
+				"BrothelSurrender",
+				"CombatEncounter",
+				"Minotaur",
+				"ApplyStance",
+				"Breast Smother",
+				"Restrainer",
+				"StartCombat",
+				"GameOver"
+			]
+		},
+		{
+			"NameOfScene": "Go home and rethink your life choices.",
+			"theScene": ["You decide that a horny Minotaur just isn't doing it for you now that she's here."]
+		}
+	]
+}

@@ -1,0 +1,190 @@
+{
+	"name": "MysticBrothelImp",
+	"CardType": "Event",
+	"CardLimit": "0",
+	"Description": "",
+	"requires": [""],
+	"Speakers": [{
+		"name": "Imp",
+		"postName": "",
+		"SpeakerType": "Monster"
+	}],
+	"EventText": [{
+			"NameOfScene": "EventStart",
+			"theScene": ["You Enter the room, a flare of power as you close the door behind you lets you know the Imp will arrive.",
+				"DisplayCharacters",
+				"1",
+				"EndLoop",
+				"StopBGM",
+				"She arrives and looks eager to get going, and she's not going to take anything lying down.",
+				"You have a feeling the power in the room would render you helpless on any fight you might try and start.",
+				"Speaks",
+				"So... you brought me here, how's it going to go? Just me... or should I try and summon some friends?",
+				"Menu",
+				"'Combat'",
+				"Her 'Defeated'",
+				"Take me to the Imp Den",
+				"Take me to the Glory Hole",
+				"Reward Blowjob then to the Imp Den",
+				"Go home and rethink your life choices.",
+				"EndLoop"
+			]
+		},
+		{
+			"NameOfScene": "'Combat'",
+			"theScene": [
+				"Speaks",
+				"You know this room will make you lose right?",
+				"Menu",
+				"Anal",
+				"Sex",
+				"Blowjob",
+				"Summon Some Friends",
+				"Base Menu",
+				"EndLoop"
+			]
+		},
+		{
+			"NameOfScene": "Base Menu",
+			"theScene": ["Menu",
+				"'Combat'",
+				"Her 'Defeated'",
+				"Take me to the Imp Den",
+				"Take me to the Glory Hole",
+				"Reward Blowjob then to the Imp Den",
+				"Go home and rethink your life choices.",
+				"EndLoop"
+			]
+		},
+		{
+			"NameOfScene": "Anal",
+			"theScene": ["SetSpirit",
+				"1",
+				"ChangeArousalByPercent",
+				"100",
+				"ApplyStatusEffect",
+				"BrothelSurrender",
+				"CombatEncounter",
+				"Imp",
+				"ApplyStance",
+				"Anal",
+				"Restrainer",
+				"StartCombat",
+				"GameOver"
+			]
+		},
+		{
+			"NameOfScene": "Sex",
+			"theScene": ["SetSpirit",
+				"1",
+				"ChangeArousalByPercent",
+				"100",
+				"ApplyStatusEffect",
+				"BrothelSurrender",
+				"CombatEncounter",
+				"Imp",
+				"ApplyStance",
+				"Sex",
+				"Restrainer",
+				"StartCombat",
+				"GameOver"
+			]
+		},
+		{
+			"NameOfScene": "Blowjob",
+			"theScene": ["SetSpirit",
+				"1",
+				"ChangeArousalByPercent",
+				"100",
+				"ApplyStatusEffect",
+				"BrothelSurrender",
+				"CombatEncounter",
+				"Imp",
+				"ApplyStance",
+				"Blowjob",
+				"Restrainer",
+				"StartCombat",
+				"GameOver"
+			]
+		},
+		{
+			"NameOfScene": "Take me to the Imp Den",
+			"theScene": [
+				"So... before we get there... Wanna go into one of the extra rooms and get warmed up with some oral before you get there?♪",
+				"You're pretty sure she just wants you all to herself a little while...",
+				"Menu",
+				"Just head to the Imp Den",
+				"Blowjob then to the Imp Den",
+				"EndLoop"
+			]
+		},
+		{
+			"NameOfScene": "Just head to the Imp Den",
+			"theScene": ["Speaks",
+				"Fine, Guess I'll just escort you there.",
+				"The room morhps into a hallway from the Forest Dungeon, you're pretty sure the summoning magic just sent you to where the Imp was from in the first place",
+				"JumpToEventThenScene",
+				"Imp Den",
+				"VisitImpDen"
+			]
+		},
+		{
+			"NameOfScene": "Blowjob then to the Imp Den",
+			"theScene": ["The room morhps into a hallway from the Forest Dungeon, you're pretty sure the summoning magic just sent you to where the Imp was from in the first place",
+				"JumpToEventThenScene",
+				"Forest Dungeon Nexus",
+				"Go get 'warmed up'."
+			]
+		},
+		{
+			"NameOfScene": "Summon Some Friends",
+			"theScene": ["SetSpirit",
+				"1",
+				"ChangeArousalByPercent",
+				"100",
+				"ApplyStatusEffect",
+				"BrothelSurrender",
+				"CombatEncounter",
+				"Imp",
+				"ApplyStance",
+				"Blowjob",
+				"Restrainer",
+				"Imp",
+				"ApplyStance",
+				"Blowjob",
+				"Restrainer",
+				"Imp",
+				"ApplyStance",
+				"Blowjob",
+				"Restrainer",
+				"StartCombat",
+				"GameOver"
+			]
+		},
+		{
+			"NameOfScene": "Take me to the Glory Hole",
+			"theScene": ["She tilts her head before shrugging pulling your arm towards the back of the rooom before it shifts into a hallway from the Forest Dungeon",
+				"There should be a couple of girls already on the other side but they might not notice you before I can start.",
+				"ChangeImageFor", "1", "Smug",
+				"JumpToEventThenScene",
+				"Imp Glory Hole",
+				"Stick your dick in the glory hole.",
+				"Everything fades back to the room before anything too serious could start.",
+				"JumpToEventThenScene",
+				"MysticBrothel",
+				"EventReturn"
+			]
+		},
+		{
+			"NameOfScene": "Her 'Defeated'",
+			"theScene": ["Not that you actually won... but you brought me here and I won't tell the others if you don't!",
+				"JumpToEvent",
+				"Imp Defeated"
+			]
+		},
+		{
+			"NameOfScene": "Go home and rethink your life choices.",
+			"theScene": ["You decide that a horny Imp just isn't doing it for you now that she's here."]
+		}
+	]
+}

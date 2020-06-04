@@ -1,0 +1,61 @@
+{
+	"name": "MysticBrothelMatango",
+	"CardType": "Event",
+	"CardLimit": "0",
+	"Description": "",
+	"requires": [""],
+	"Speakers": [{
+		"name": "Matango",
+		"postName": "",
+		"SpeakerType": "Monster"
+	}],
+	"EventText": [{
+			"NameOfScene": "EventStart",
+			"theScene": ["You Enter the room, a flare of power as you close the door behind you lets you know the Matango will arrive.",
+				"DisplayCharacters",
+				"1",
+				"EndLoop",
+				"StopBGM",
+				"She arrives and looks eager to get going, and she's not going to take anything lying down.",
+				"You have a feeling the power in the room would render you helpless on any fight you might try and start.",
+				"Speaks",
+				"So... you brought me here, how are we going to do it?",
+				"Menu",
+				"Spore 'Ambush'",
+				"Sex",
+				"Go home and rethink your life choices.",
+				"EndLoop"
+			]
+		},
+		{
+			"NameOfScene": "Sex",
+			"theScene": ["SetSpirit",
+				"1",
+				"ChangeArousalByPercent",
+				"100",
+				"ApplyStatusEffect",
+				"BrothelSurrender",
+				"CombatEncounter",
+				"Matango",
+				"ApplyStance",
+				"Sex",
+				"Restrainer",
+				"StartCombat",
+				"GameOver"
+			]
+		},
+		{
+			"NameOfScene": "Spore 'Ambush'",
+			"theScene": [
+				"At your words, you find your surroundings shift to a generic hall of the Forest Dungeon.",
+				"JumpToEvent",
+				"Matango Ambush"
+
+			]
+		},
+		{
+			"NameOfScene": "Go home and rethink your life choices.",
+			"theScene": ["You decide that a horny Matango just isn't doing it for you now that she's here."]
+		}
+	]
+}

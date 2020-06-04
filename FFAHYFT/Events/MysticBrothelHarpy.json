@@ -1,0 +1,91 @@
+{
+	"name": "MysticBrothelHarpy",
+	"CardType": "Event",
+	"CardLimit": "0",
+	"Description": "",
+	"requires": [""],
+	"Speakers": [{
+		"name": "Harpy",
+		"postName": "",
+		"SpeakerType": "Monster"
+	}],
+	"EventText": [{
+			"NameOfScene": "EventStart",
+			"theScene": ["You Enter the room, a flare of power as you close the door behind you lets you know the Harpy will arrive.",
+				"DisplayCharacters",
+				"1",
+				"EndLoop",
+				"StopBGM",
+				"She arrives and looks eager to get going, and she's not going to take anything lying down.",
+				"You have a feeling the power in the room would render you helpless on any fight you might try and start.",
+				"Speaks",
+				"So... you brought me here, how's it going to go?",
+				"Menu",
+				"Sex",
+				"Anal",
+				"Summon A Friend",
+				"Go home and rethink your life choices.",
+				"EndLoop"
+			]
+		},
+		{
+			"NameOfScene": "Sex",
+			"theScene": ["SetSpirit",
+				"1",
+				"ChangeArousalByPercent",
+				"100",
+				"ApplyStatusEffect",
+				"BrothelSurrender",
+				"CombatEncounter",
+				"Harpy",
+				"ApplyStance",
+				"Sex",
+				"Restrainer",
+				"StartCombat",
+				"GameOver"
+			]
+		},
+		{
+			"NameOfScene": "Anal",
+			"theScene": ["SetSpirit",
+				"1",
+				"ChangeArousalByPercent",
+				"100",
+				"ApplyStatusEffect",
+				"BrothelSurrender",
+				"CombatEncounter",
+				"Harpy",
+				"ApplyStance",
+				"Anal",
+				"Restrainer",
+				"StartCombat",
+				"GameOver"
+			]
+		},
+		{
+			"NameOfScene": "Summon A Friend",
+			"theScene": ["SetSpirit",
+				"1",
+				"ChangeArousalByPercent",
+				"100",
+				"ApplyStatusEffect",
+				"BrothelSurrender",
+				"CombatEncounter",
+				"Harpy",
+				"ApplyStance",
+				"Sex",
+				"Restrainer",
+				"Harpy",
+				"ApplyStance",
+				"Face Sit",
+				"Restrainer",
+				"StartCombat",
+				"GameOver"
+			]
+		},
+		{
+			"NameOfScene": "Go home and rethink your life choices.",
+			"theScene": ["You decide that a horny Harpy just isn't doing it for you now that she's here."]
+		}
+	]
+}

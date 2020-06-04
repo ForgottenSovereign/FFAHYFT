@@ -1,5 +1,5 @@
 {
-	"name": "Mystic Gallery Brothel",
+	"name": "Mystic Brothel",
 	"CardType": "Shopping",
 	"CardLimit": "0",
 	"Description": "Standalone Brothel",
@@ -24,8 +24,11 @@
 				"Menu",
 				"RequiresMinimumProgressFromEvent", "Bag Mimic", "1", "Mimic Bag", "HideOptionOnRequirementFail",
         "RequiresItem", "Vandal Note", "Mystic Forest", "HideOptionOnRequirementFail",
-				"RequiresItem", "Sigil Of Allure", "Forest Dungeon", "HideOptionOnRequirementFail",
+				"RequiresItem", "Sigil of Allure", "Forest Dungeon", "HideOptionOnRequirementFail",
 				"RequiresItem", "Temple Checkpoint Gem", "Mountain", "HideOptionOnRequirementFail",
+				"RequiresItem", "Sigil of Will-Power", "Will-Power Temple", "HideOptionOnRequirementFail",
+				"RequiresItem", "Labyrinth Checkpoint Gem", "Cavern", "HideOptionOnRequirementFail",
+				"Bug Event Break Test",
 				"Leave",
 				"EndLoop"
 			]
@@ -47,9 +50,7 @@
 				"IfChoice", "1", "Elf", "Paid Elf",
 				"IfChoice", "1", "Imp", "Paid Imp",
 				"IfChoice", "1", "Matango", "Paid Matango",
-				"IfChoice", "1", "Harpy", "Paid Harpy",
-				"IfChoice", "1", "Lizard Girl", "Paid Lizard Girl",
-				"IfChoice", "1", "Minotaur", "Paid Minotaur",
+				"IfChoice", "1", "Matango", "Paid Matango",
 				"IfChoice", "1", "Mimic Bag", "Mimic Bag"
 			]
 		},
@@ -99,11 +100,31 @@
 			]
 		},
 		{
+			"NameOfScene": "Will-Power Temple",
+			"theScene": [
+				"What kind of monster from there?",
+				"Menu",
+        "Kunoichi",
+        "Tengu",
+				"Nevermind",
+				"EndLoop"
+			]
+		},
+		{
+			"NameOfScene": "Cavern",
+			"theScene": [
+				"What kind of monster from there?",
+				"Menu",
+				"Nevermind",
+				"EndLoop"
+			]
+		},
+		{
 			"NameOfScene": "Alraune",
 			"theScene": [
 				"SetChoice", "1", "Alraune",
 				"Speaks",
-				"100 Eros and an Alraune will show up in that room over there",
+				"100 Eros and an alraune will show up in that room over there",
 				"He points to a room in the southern corner",
 				"Speaks",
 				"So, going for it?",
@@ -129,7 +150,7 @@
 			"theScene": [
 				"SetChoice", "1", "Slime",
 				"Speaks",
-				"100 Eros and a Slime will show up in that room over there",
+				"100 Eros and an alraune will show up in that room over there",
 				"He points to a room in the southern corner",
 				"Speaks",
 				"So, going for it?",
@@ -177,11 +198,37 @@
 			]
 		},
 		{
+			"NameOfScene": "Lizard Girl",
+			"theScene": [
+				"SetChoice", "1", "Lizard Girl",
+				"Speaks",
+				"100 Eros and a Lizard Girl will show up in that room over there.",
+				"He points to a room in the southern corner",
+				"Speaks",
+				"So, going for it?",
+				"Menu",
+				"Of Course!",
+				"Nevermind",
+				"EndLoop"
+			]
+		},
+		{
+			"NameOfScene": "Paid Lizard Girl",
+			"theScene": [
+				"JumpToEventThenScene",
+				"MysticBrothelLizardGirl",
+				"EventStart",
+        "EndLoop",
+        "JumpToScene",
+				"EventReturn"
+			]
+		},
+		{
 			"NameOfScene": "Imp",
 			"theScene": [
 				"SetChoice", "1", "Imp",
 				"Speaks",
-				"100 Eros and an Imp will show up in that room over there",
+				"100 Eros and an Imp will show up in that room over there... she might be able to summon more if you really want more.",
 				"He points to a room in the southern corner",
 				"Speaks",
 				"So, going for it?",
@@ -196,7 +243,6 @@
 			"theScene": [
 				"JumpToEventThenScene",
 				"MysticBrothelImp",
-				"EventStart",
         "EndLoop",
         "JumpToScene",
 				"EventReturn"
@@ -207,7 +253,7 @@
 			"theScene": [
 				"SetChoice", "1", "Matango",
 				"Speaks",
-				"100 Eros and a Matango will show up in that room over there",
+				"100 Eros and an Imp will show up in that room over there",
 				"He points to a room in the southern corner",
 				"Speaks",
 				"So, going for it?",
@@ -222,7 +268,6 @@
 			"theScene": [
 				"JumpToEventThenScene",
 				"MysticBrothelMatango",
-				"EventStart",
         "EndLoop",
         "JumpToScene",
 				"EventReturn"
@@ -240,83 +285,6 @@
 				"Take them.",
 				"EndLoop",
 				"JumpToScene",
-				"EventReturn"
-			]
-		},
-		{
-			"NameOfScene": "Harpy",
-			"theScene": [
-				"SetChoice", "1", "Harpy",
-				"Speaks",
-				"100 Eros and a Harpy will show up in that room over there",
-				"He points to a room in the southern corner",
-				"Speaks",
-				"So, going for it?",
-				"Menu",
-				"Of Course!",
-				"Nevermind",
-				"EndLoop"
-			]
-		},
-		{
-			"NameOfScene": "Paid Harpy",
-			"theScene": [
-				"JumpToEventThenScene",
-				"MysticBrothelHarpy",
-				"EventStart",
-        "EndLoop",
-        "JumpToScene",
-				"EventReturn"
-			]
-		},
-		{
-			"NameOfScene": "Lizard Girl",
-			"theScene": [
-				"SetChoice", "1", "Lizard Girl",
-				"Speaks",
-				"100 Eros and a Lizard Girl will show up in that room over there",
-				"He points to a room in the southern corner",
-				"Speaks",
-				"So, going for it?",
-				"Menu",
-				"Of Course!",
-				"Nevermind",
-				"EndLoop"
-			]
-		},
-		{
-			"NameOfScene": "Paid Lizard Girl",
-			"theScene": [
-				"JumpToEvent",
-				"MysticBrothelLizardGirl",
-        "EndLoop",
-        "JumpToScene",
-				"EventReturn"
-			]
-		},
-		{
-			"NameOfScene": "Minotaur",
-			"theScene": [
-				"SetChoice", "1", "Minotaur",
-				"Speaks",
-				"100 Eros and a Minotaur will show up in that room over there",
-				"He points to a room in the southern corner",
-				"Speaks",
-				"So, going for it?",
-				"Menu",
-				"Of Course!",
-				"Nevermind",
-				"EndLoop"
-			]
-		},
-		{
-			"NameOfScene": "Paid Minotaur",
-			"theScene": [
-				"JumpToEventThenScene",
-				"MysticBrothelMinotaur",
-				"EventStart",
-        "EndLoop",
-        "JumpToScene",
 				"EventReturn"
 			]
 		},
